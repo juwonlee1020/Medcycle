@@ -10,8 +10,7 @@
         <title>MedCycle</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico">
-
-        <link rel="stylesheet" href="main.css">  
+        <link rel="stylesheet" href="form.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <!-- Modernizr 
@@ -35,27 +34,30 @@
                                 <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
-                                            <label for="name" class="col-sm-6 unique">Device Name
+                                            <label for="name" class="col-sm-6 unique">Device Type
                                                 <input name="name" type="text" id="name" required>
                                             </label>
-                                            <label for="email" class="col-sm-6 unique">Date of Purchase
-                                                <input name="email" type="email" id="email" required>
+                                            <label for="brand" class="col-sm-6 unique">Brand Name
+                                                <select name="brand">
+                                                    <option value="draeger">Draeger</option>
+                                                    <option value="fanem">Fanem</option>
+                                                    <option value="ginevri">Ginevri</option>
+                                                    <option value="phoenix">Phoenix</option>
+                                                </select>
                                             </label>
-                                            <label for="number" class="col-sm-6 unique">Number
-                                                <input name="number" type="text" id="number" required>
+                                            <label for="number" class="col-sm-6 unique">Model Name
+                                                <!- ->
                                             </label>
-                                            <label for="people" class="col-sm-6 unique">How Many People
+                                            <label for="people" class="col-sm-6 unique">Date of Purchase
                                                 <input name="people" type="number" id="people" min="1" required>
                                             </label>
-                                            <label for="date" class="col-sm-6 unique">Date
+                                            <label for="date" class="col-sm-6 unique">Approximate Number of Usage
                                                 <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
                                             </label>
-                                            <label for="time" class="col-sm-6 unique">Time
+                                            <label for="time" class="col-sm-6 unique">Number of Previous Malfunctionings
                                                 <input name="time" type="text" id="time" class="timepicker" required>
                                             </label>
-                                            <label for="request" class="col-sm-12 unique">Special Request
-                                                <textarea id="request" name="request" required></textarea>
-                                            </label>
+                                            
                                             <div class="col-sm-6">
                                                 <button type="submit" class="btn-unique">Check Now</button>
                                             </div>

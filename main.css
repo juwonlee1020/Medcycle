@@ -1018,12 +1018,12 @@ section.booking .form-holder::after {
   max-width: 400px;
   height: 300px;
   display: block;
-  background: url(../img/vegetables.png) no-repeat;
+  background: url(img/ctscanner.png) no-repeat;
   background-position: center center;
   background-size: 100%;
   position: absolute;
-  bottom: -100px;
-  right: -10vw;
+  bottom: -80px;
+  right: -15vw;
   z-index: -1;
 }
 section.booking .form-holder .ribbon {
@@ -1063,6 +1063,13 @@ section.booking .form-holder form {
     border-right: 20px solid transparent;
     top: 40px;
   }
+}
+
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background-image: url(...);   /* add custom arrow */
 }
 /* ==========================================
    CONTACT SECTION
