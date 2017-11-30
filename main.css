@@ -652,7 +652,7 @@ section.about::before {
   content: '';
   display: block;
   background-position: center center;
-  background: url(../img/dialysis.png) no-repeat;
+  background: url(img/dialysis.png) no-repeat;
   background-size: 100%;
   position: absolute;
   max-width: 500px;
@@ -759,12 +759,12 @@ section.offers .item {
 section.offers .item img {
   max-width: 180px;
 }
-section.offers .item .discount {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #107dac;
-  color: #fff;
+section.offers .item .impact {
+  width: 300px;
+  height: 50px;
+  background: #fff;
+  border: solid #107dac;
+  color: #000;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -772,21 +772,18 @@ section.offers .item .discount {
   align-items: center;
   position: absolute;
   top: -32px;
-  right: 20%;
+  right: 10%;
 }
-section.offers .item .discount span {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 700;
+section.offers .item .impact span {
+  font-size: 1.3em;
+  font-weight: 300;
   line-height: 1em;
   text-align: center;
 }
-section.offers .item p {
-  font-size: 1.3em;
-  font-weight: 700;
-}
-section.offers .item p.before {
-  text-decoration: line-through;
+
+
+section.offers .item .description h4{
+    line-height:1.4em;
 }
 /* ==========================================
    Menu Section
