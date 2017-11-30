@@ -16,7 +16,7 @@ new Vue({
                 original: 40000,
                 price: 20000,
                 inStock: 2,
-                img: 'img/dialysis.jpg'
+                img: 'img/dialysis.png'
             },
             {
                 id: 2,
