@@ -16,13 +16,13 @@ new Vue({
                 original: 40000,
                 price: 20000,
                 inStock: 2,
-                img: 'img/haemo.jpg'
+                img: 'img/haemo.JPG'
             
             },
             {
                 id: 2,
                 name: 'DBB-EXA',
-                type: "Medical ventilator",
+                type: "Haemodialysis Machine",
                 brand: 'Nikkiso',
                 original: 40000,
                 price: 20000,
@@ -32,13 +32,16 @@ new Vue({
             {
                 id: 3,
                 name: 'TM-1009',
-                description: 'This one might not last for so long, but hey, printers never work anyways, right?',
-                price: 149,
-                inStock: 5
+                type: 'Ultrasound scanner',
+                brand: 'Technocare Medisystem',
+                original: 15000,
+                price: 8000,
+                inStock: 5,
+                img: 'img/ultrasound.jpg'
             },
             {
                 id: 4,
-                name: 'iPhone 7 cover',
+                name: 'ODM-2200 Ultrasonic A/B Scanner',
                 description: 'Having problems keeping a hold of that phone, huh? Ever considered not dropping it in the first place?',
                 price: 49,
                 inStock: 42
