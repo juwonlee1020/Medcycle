@@ -10,9 +10,13 @@
         <title>MedCycle</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="form.css">  
+        <link rel="stylesheet" href="main.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="main.js"></script>
         <!-- Modernizr 
         <script type="text/javascript" src="js/modernizr.custom.79639.min.js"></script>
         -->
@@ -35,44 +39,75 @@
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
                                             <label for="name" class="col-sm-6 unique">Device Type
-                                                <input name="name" type="text" id="name" required>
+                                                <input name="name" type="text" id="name" >
                                             </label>
-                                            <label for="brand" class="col-sm-6 unique">Brand Name
-                                                <select name="brand">
-                                                    <option value="draeger">Draeger</option>
-                                                    <option value="fanem">Fanem</option>
-                                                    <option value="ginevri">Ginevri</option>
-                                                    <option value="phoenix">Phoenix</option>
-                                                </select>
+                                            <label for="brand" class="col-sm-6 unique">Brand Name<br>
+                                                <span class="custom-dropdown">
+                                                    <select>
+                                                        <option>Choose from options below</option>
+                                                        <option>Draeger</option>
+                                                        <option>Fanem</option>  
+                                                        <option>Ginevri</option>
+                                                        <option>Phoenix</option>
+                                                    </select>
+                                                </span>
+                                                
                                             </label>
-                                            <label for="number" class="col-sm-6 unique">Model Name
-                                                <!- ->
-                                            </label>
-                                            <label for="people" class="col-sm-6 unique">Date of Purchase
-                                                <input name="people" type="number" id="people" min="1" required>
-                                            </label>
-                                            <label for="date" class="col-sm-6 unique">Approximate Number of Usage
-                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
-                                            </label>
-                                            <label for="time" class="col-sm-6 unique">Number of Previous Malfunctionings
-                                                <input name="time" type="text" id="time" class="timepicker" required>
-                                            </label>
-                                            
-                                            <div class="col-sm-6">
-                                                <button type="submit" class="btn-unique">Check Now</button>
-                                            </div>
-                                            <div>
-                                                <button class="btn-unique">Book Online Consultation</button>
-                                            </div>
                                         </div>
+                                        <div class="row">
+                                            <label for="number" class="col-sm-6 unique">Model Name<br>
+                                                <span class="custom-dropdown">
+
+                                                    <select>
+                                                        <option>Choose from options below</option>
+                                                        <option>Babyleo TN500 IncuWarmer</option>
+                                                        <option>Babytherm 8004/8010 Infant Incubator</option>
+                                                        <option>Caleo Infant Incubator</option>
+                                                        <option>Phoenix</option>
+                                                    </select>
+                                                </span>
+                                            </label>
+                                        
+                                        
+                                            <label for="people" class="col-sm-6 unique">Date of Purchase
+                                               <input id="date" type="date">
+                                            </label>
+                                        </div>
+                                        <div class="row">
+                                            <label for="date" class="col-sm-6 unique">Approximate Number of Usage
+                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' >
+                                            </label>
+                                        
+                                            <label for="time" class="col-sm-6 unique">Number of Previous Malfunctionings
+                                                <input name="time" type="text" id="time" class="timepicker" >
+                                            </label>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </form>
+                            <div class="row">
+                                        
+                                            <div class="col-sm-6">
+                                                <button id="hie" class="btn-unique">Check Now</button>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <button class="btn-unique">Book Online Consultation</button>
+                                            </div>
+                                    
+                                        </div>
                         </div>
                     </div>
                 </div>
         </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>    
+<script>
+    $("#hie").click(function(){
+        $("#hie").hide() ;
+    });
+</script>
     </body>
 </html>
