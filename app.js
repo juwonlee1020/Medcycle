@@ -16,8 +16,7 @@ new Vue({
                 original: 40000,
                 price: 20000,
                 inStock: 2,
-                img: 'img/haemo.JPG'
-            
+                img: 'img/haemo.jpg'
             },
             {
                 id: 2,
