@@ -41,23 +41,32 @@ new Vue({
             {
                 id: 4,
                 name: 'ODM-2200 Ultrasonic A/B Scanner',
-                description: 'Having problems keeping a hold of that phone, huh? Ever considered not dropping it in the first place?',
-                price: 49,
-                inStock: 42
+                type: 'Ultrasound scanner',
+                brand: 'MEDA Co., Ltd',
+                original: 145000,
+                price: 7800,
+                inStock: 3,
+                img: 'img/ultrasound_two.jpg'
             },
             {
                 id: 5,
-                name: 'iPad Pro (9.7 inch)',
-                description: 'We heard it\'s supposed to be pretty good. At least that\'s what people say.',
-                price: 599,
-                inStock: 0
+                name: ' Meditec VISTA Ventilator',
+                type: 'Medical Ventilator',
+                brand: 'Meditec England',
+                original: 40000,
+                price: 21000,
+                inStock: 1,
+                img: 'img/ventilator.png'
             },
             {
                 id: 6,
-                name: 'OnePlus 3 cover',
-                description: 'Does your phone spend most of its time on the ground? This cheap piece of plastic is the solution!',
-                price: 19,
-                inStock: 81
+                name: "Neonatal Intensive Care Incubator Inc 200",
+                brand: "Phoenix",
+                type: 'Infant Incubator',
+                original: 20000,
+                price: 12000,
+                inStock: 1,
+                img: "img/neonatal.png"
             }
         ]
     },
